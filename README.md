@@ -9,7 +9,7 @@
 <p>1. Klonen Sie das Repository</p>
 
 ```
-git clone https://github.com/your-username/online-lagerbank.git
+git clone https://github.com/Nemesis1042/LagerbankOnline.git
 ```
 
 <p>2. Wechseln Sie in das Projektverzeichnis</p>
