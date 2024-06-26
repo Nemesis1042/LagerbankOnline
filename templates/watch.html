@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaktionen anzeigen</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <style>
+        body {
+            margin: 20px;
+        }
+        h1 {
+            
+            text-align: center;
+            background: red;
+            color: white;
+        }
+        .data {
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transaktionen anzeigen</h1>
+    <a href="/">Zur Startseite</a>
+    <div>
+        {{ tables|safe }}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('table.data').DataTable({
+                "paging": false,  // Disable pagination
+                "searching": true
+            });
+        });
+    </script>
+</body>
+</html>
